@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>ripple&#39;s Blog</title>
   <icon>https://damaskeen.space/icon.png</icon>
-  
+  <subtitle>业精于勤，荒于嬉</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://damaskeen.space/"/>
