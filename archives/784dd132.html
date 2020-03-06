@@ -52,19 +52,19 @@
     let time, hidden, visible, title = document.title;
     let favicon = document.querySelector('link[rel="icon"]');
     
-      hidden = '';
-      visible = '';
+      hidden = '(つェ⊂)我藏好了哦~';
+      visible = '(*´∇｀*) 被你发现啦~';
     
     let random = t => t[Math.floor(Math.random() * t.length)];
     const change = () => {
       if (document.hidden) {
-        favicon.setAttribute('href', '/images/favicon-32x32-next.png');
+        favicon.setAttribute('href', '/images/favicon_ripple.svg');
         
           document.title = hidden;
         
         clearTimeout(time);
       } else {
-        favicon.setAttribute('href', '/images/favicon-32x32-next.png');
+        favicon.setAttribute('href', '/images/favicon_ripple.svg');
         
           document.title = visible;
         
