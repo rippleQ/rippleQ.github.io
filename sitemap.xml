@@ -2,13 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://damaskeen.space/archives/784dd132.html</loc>
-    
-    <lastmod>2020-03-04T07:04:53.468Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://damaskeen.space/archives/4a17b156.html</loc>
     
     <lastmod>2020-03-04T07:04:53.468Z</lastmod>
@@ -16,9 +9,9 @@
   </url>
   
   <url>
-    <loc>https://damaskeen.space/404.html</loc>
+    <loc>https://damaskeen.space/archives/784dd132.html</loc>
     
-    <lastmod>2020-03-04T04:58:57.513Z</lastmod>
+    <lastmod>2020-03-04T07:04:53.468Z</lastmod>
     
   </url>
   
@@ -40,6 +33,13 @@
     <loc>https://damaskeen.space/about/index.html</loc>
     
     <lastmod>2020-03-04T04:52:29.188Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://damaskeen.space/404/404.html</loc>
+    
+    <lastmod>2018-10-29T01:55:32.000Z</lastmod>
     
   </url>
   
