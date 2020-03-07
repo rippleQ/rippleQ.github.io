@@ -6,7 +6,12 @@
     <content><![CDATA[<p>App Store 的个人使用手册</p>
 <a id="more"></a>
 
-<p>啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊</p>
+<p>####美区苹果 ID</p>
+<ol>
+<li>手机地区设置成美国</li>
+<li>购买/下载/更新应用时，将代理设置为美国节点</li>
+<li>切换 Apple Store 账号后，退出 App Store 并杀掉后台使其重新载入 </li>
+</ol>
 ]]></content>
       <categories>
         <category>Apple</category>
@@ -15,12 +20,6 @@
         <tag>App Store</tag>
         <tag>Apple</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>Test</title>
-    <url>/archives/784dd132.html</url>
-    <content><![CDATA[<p>This is my first post.</p>
-]]></content>
   </entry>
   <entry>
     <title>Hello World</title>
