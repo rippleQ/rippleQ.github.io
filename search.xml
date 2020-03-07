@@ -6,8 +6,7 @@
     <content><![CDATA[<p>App Store 的个人使用手册</p>
 <a id="more"></a>
 
-<p>####美区苹果 ID</p>
-<ol>
+<h4 id="美区苹果-ID"><a href="#美区苹果-ID" class="headerlink" title="美区苹果 ID"></a>美区苹果 ID</h4><ol>
 <li>手机地区设置成美国</li>
 <li>购买/下载/更新应用时，将代理设置为美国节点</li>
 <li>切换 Apple Store 账号后，退出 App Store 并杀掉后台使其重新载入 </li>
