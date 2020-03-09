@@ -15,6 +15,11 @@
     <content><![CDATA[<p>App Store 的个人使用手册</p>
 <a id="more"></a>
 
+<h4 id="登录-注销"><a href="#登录-注销" class="headerlink" title="登录/注销"></a>登录/注销</h4><p>注销有两种方式，一种是在 设置 - Apple ID - iTunes Store 与 App Store 中，点击账号选择退出登录；另一种是在 App Store 中，点击头像，下滑菜单至底部，选择退出登录。</p>
+<p>对于经常切换账户的用户，推荐选择第二种方式，比较稳定。</p>
+<h4 id="国区苹果-ID"><a href="#国区苹果-ID" class="headerlink" title="国区苹果 ID"></a>国区苹果 ID</h4><ol>
+<li>购买/下载/更新应用时，切记不要使用代理，可能会导致账户锁定</li>
+</ol>
 <h4 id="美区苹果-ID"><a href="#美区苹果-ID" class="headerlink" title="美区苹果 ID"></a>美区苹果 ID</h4><ol>
 <li>手机地区设置成美国</li>
 <li>购买/下载/更新应用时，将代理设置为美国节点</li>
