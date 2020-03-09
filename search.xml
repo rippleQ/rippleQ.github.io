@@ -1,15 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Test</title>
-    <url>/archives/784dd132.html</url>
-    <content><![CDATA[<p>图片测试</p>
-<a id="more"></a>
-
-<p><a href="https://chevereto.damaskeen.space/image/vRU9" target="_blank" rel="noopener external nofollow noreferrer"><img src="https://chevereto.damaskeen.space/images/2020/03/08/21_Cage_8k.jpg" alt="21_Cage_8k.jpg"></a></p>
-]]></content>
-  </entry>
-  <entry>
     <title>App Store 注意事项</title>
     <url>/archives/a849ad8.html</url>
     <content><![CDATA[<p>App Store 的个人使用手册</p>
@@ -17,13 +8,14 @@
 
 <h4 id="登录-注销"><a href="#登录-注销" class="headerlink" title="登录/注销"></a>登录/注销</h4><p>注销有两种方式，一种是在 设置 - Apple ID - iTunes Store 与 App Store 中，点击账号选择退出登录；另一种是在 App Store 中，点击头像，下滑菜单至底部，选择退出登录。</p>
 <p>对于经常切换账户的用户，推荐选择第二种方式，比较稳定。</p>
+<p>切换 Apple Store 账号后，退出 App Store 并杀掉后台使其重新载入 。</p>
+<h4 id="充值-购买"><a href="#充值-购买" class="headerlink" title="充值/购买"></a>充值/购买</h4><p>国区苹果 ID 支持绑定支付宝、微信付款，此处不再赘述。美区 ID 可以绑定双币卡，若不方便办理双币卡的，可以选择购买礼品卡的方式进行充值。这里推荐一个购买礼品卡的平台：<a href="https://www.offgamers.com/" target="_blank" rel="noopener external nofollow noreferrer">OFFGAMERS</a> ，支持国区 Paypal 付款，绑定国内银联卡就可以。不推荐在淘宝平台购买礼品卡，有买到黑卡被封号的风险。另外，如果你有认识的在国外的朋友的话，可以在黑色星期五国外电商平台活动期间买到打折的礼品卡。</p>
 <h4 id="国区苹果-ID"><a href="#国区苹果-ID" class="headerlink" title="国区苹果 ID"></a>国区苹果 ID</h4><ol>
 <li>购买/下载/更新应用时，切记不要使用代理，可能会导致账户锁定</li>
 </ol>
 <h4 id="美区苹果-ID"><a href="#美区苹果-ID" class="headerlink" title="美区苹果 ID"></a>美区苹果 ID</h4><ol>
 <li>手机地区设置成美国</li>
 <li>购买/下载/更新应用时，将代理设置为美国节点</li>
-<li>切换 Apple Store 账号后，退出 App Store 并杀掉后台使其重新载入 </li>
 </ol>
 ]]></content>
       <categories>
@@ -33,23 +25,5 @@
         <tag>App Store</tag>
         <tag>Apple</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>Hello World</title>
-    <url>/archives/4a17b156.html</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener external nofollow noreferrer">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener external nofollow noreferrer">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener external nofollow noreferrer">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener external nofollow noreferrer">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener external nofollow noreferrer">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener external nofollow noreferrer">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener external nofollow noreferrer">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener external nofollow noreferrer">Deployment</a></p>
-]]></content>
   </entry>
 </search>
