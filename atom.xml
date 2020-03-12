@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://damaskeen.space/"/>
-  <updated>2020-03-10T10:29:12.679Z</updated>
+  <updated>2020-03-12T13:32:05.295Z</updated>
   <id>https://damaskeen.space/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Chevereto 首页加入上传图片总数量统计</title>
+    <link href="https://damaskeen.space/archives/5e89d88e.html"/>
+    <id>https://damaskeen.space/archives/5e89d88e.html</id>
+    <published>2020-03-12T12:47:19.000Z</published>
+    <updated>2020-03-12T13:32:05.295Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;前些天在 Telegram 上的 &lt;a href=&quot;https://t.me/agintme&quot; target=&quot;_blank&quot; rel=&quot;noopener external nofollow noreferrer&quot;&gt;杂货屋&lt;/a&gt; 频道看到一篇&lt;a href=&quot;https://www.yunloc.com/984.html&quot; target=&quot;_blank&quot; rel=&quot;noopener external nofollow noreferrer&quot;&gt;《Chevereto - 首页加入上传图片总数量统计》&lt;/a&gt;的教程，于是决定自己动手试一试，经过了一番踩坑，终于大功告成。本着没写下来就是没做过的原则，记录一下具体操作流程。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="工具" scheme="https://damaskeen.space/categories/%E5%B7%A5%E5%85%B7/"/>
+    
+    
+      <category term="Chevereto 教程" scheme="https://damaskeen.space/tags/Chevereto-%E6%95%99%E7%A8%8B/"/>
+    
+  </entry>
   
   <entry>
     <title>App Store 使用手册</title>
