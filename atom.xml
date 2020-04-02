@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://damaskeen.space/"/>
-  <updated>2020-04-02T11:40:27.014Z</updated>
+  <updated>2020-04-02T11:53:58.371Z</updated>
   <id>https://damaskeen.space/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://damaskeen.space/archives/18d3f642.html"/>
     <id>https://damaskeen.space/archives/18d3f642.html</id>
     <published>2020-04-02T11:31:02.000Z</published>
-    <updated>2020-04-02T11:40:27.014Z</updated>
+    <updated>2020-04-02T11:53:58.371Z</updated>
     
     <summary type="html">
     
@@ -33,7 +33,11 @@
       <category term="Linux" scheme="https://damaskeen.space/categories/Linux/"/>
     
     
-      <category term="Ubuntu VMware Tools" scheme="https://damaskeen.space/tags/Ubuntu-VMware-Tools/"/>
+      <category term="Ubuntu" scheme="https://damaskeen.space/tags/Ubuntu/"/>
+    
+      <category term="VMware" scheme="https://damaskeen.space/tags/VMware/"/>
+    
+      <category term="Tools" scheme="https://damaskeen.space/tags/Tools/"/>
     
   </entry>
   
