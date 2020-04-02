@@ -1,6 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Ubuntu 下安装 VMware Tools</title>
+    <url>/archives/18d3f642.html</url>
+    <content><![CDATA[<h1 id="Ubuntu-下安装-VMware-Tools"><a href="#Ubuntu-下安装-VMware-Tools" class="headerlink" title="Ubuntu 下安装 VMware Tools"></a>Ubuntu 下安装 VMware Tools</h1><p>由于 FFmpeg 迁移到 Android 需要用到 Linux 环境，所以只好在 Windows 系统里面装了一个 VMware 来解决了，VMware 和 Ubuntu 镜像的安装都很顺利，唯独在安装 VMware Tools 的时候卡了很久。于是有了本篇教程 —— 通过命令行安装 VMware Tools 。</p>
+<p>首先，在桌面 <strong>Ctrl + Alt + T</strong> 打开 terminal 命令界面</p>
+<p>更新软件</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">sudo apt-get upgrade</span><br></pre></td></tr></table></figure>
+
+<p>安装 VMware Tools</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">sudo apt-get install open-vm-tools-desktop -y</span><br></pre></td></tr></table></figure>
+
+<p>重启系统</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">sudo reboot</span><br></pre></td></tr></table></figure>
+
+<p>重启虚拟机后，菜单栏 –&gt; 虚拟机 –&gt; 安装 VMware Tools –&gt; 已经变成“重新安装 VMware Tools ”，这表明 VMware Tools 已经安装成功。</p>
+]]></content>
+      <categories>
+        <category>Linux</category>
+      </categories>
+      <tags>
+        <tag>Ubuntu VMware Tools</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Chevereto 首页加入上传图片总数量统计</title>
     <url>/archives/5e89d88e.html</url>
     <content><![CDATA[<p>前些天在 Telegram 上的 <a href="https://t.me/agintme" target="_blank" rel="noopener external nofollow noreferrer">杂货屋</a> 频道看到一篇<a href="https://www.yunloc.com/984.html" target="_blank" rel="noopener external nofollow noreferrer">《Chevereto - 首页加入上传图片总数量统计》</a>的教程，于是决定自己动手试一试，经过了一番踩坑，终于大功告成。本着没写下来就是没做过的原则，记录一下具体操作流程。</p>

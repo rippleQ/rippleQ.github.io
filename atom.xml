@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://damaskeen.space/"/>
-  <updated>2020-03-12T15:09:59.821Z</updated>
+  <updated>2020-04-02T11:33:30.549Z</updated>
   <id>https://damaskeen.space/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Ubuntu 下安装 VMware Tools</title>
+    <link href="https://damaskeen.space/archives/18d3f642.html"/>
+    <id>https://damaskeen.space/archives/18d3f642.html</id>
+    <published>2020-04-02T11:31:02.000Z</published>
+    <updated>2020-04-02T11:33:30.549Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;Ubuntu-下安装-VMware-Tools&quot;&gt;&lt;a href=&quot;#Ubuntu-下安装-VMware-Tools&quot; class=&quot;headerlink&quot; title=&quot;Ubuntu 下安装 VMware Tools&quot;&gt;&lt;/a&gt;Ubuntu 下安装
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Linux" scheme="https://damaskeen.space/categories/Linux/"/>
+    
+    
+      <category term="Ubuntu VMware Tools" scheme="https://damaskeen.space/tags/Ubuntu-VMware-Tools/"/>
+    
+  </entry>
   
   <entry>
     <title>Chevereto 首页加入上传图片总数量统计</title>
