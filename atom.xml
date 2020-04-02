@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://damaskeen.space/"/>
-  <updated>2020-04-02T11:33:30.549Z</updated>
+  <updated>2020-04-02T11:40:27.014Z</updated>
   <id>https://damaskeen.space/</id>
   
   <author>
@@ -21,17 +21,11 @@
     <link href="https://damaskeen.space/archives/18d3f642.html"/>
     <id>https://damaskeen.space/archives/18d3f642.html</id>
     <published>2020-04-02T11:31:02.000Z</published>
-    <updated>2020-04-02T11:33:30.549Z</updated>
+    <updated>2020-04-02T11:40:27.014Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;h1 id=&quot;Ubuntu-下安装-VMware-Tools&quot;&gt;&lt;a href=&quot;#Ubuntu-下安装-VMware-Tools&quot; class=&quot;headerlink&quot; title=&quot;Ubuntu 下安装 VMware Tools&quot;&gt;&lt;/a&gt;Ubuntu 下安装
-        
-      
+      &lt;p&gt;由于 FFmpeg 迁移到 Android 需要用到 Linux 环境，所以只好在 Windows 里面装了一个 VMware 虚拟机来解决了，VMware 软件和 Ubuntu 镜像的安装都很顺利，唯独在安装 VMware Tools 的时候卡了很久。于是有了本篇教程 —— 通过命令行安装 VMware Tools 。&lt;/p&gt;
     
     </summary>
     

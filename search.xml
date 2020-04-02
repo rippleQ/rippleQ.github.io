@@ -3,7 +3,9 @@
   <entry>
     <title>Ubuntu 下安装 VMware Tools</title>
     <url>/archives/18d3f642.html</url>
-    <content><![CDATA[<h1 id="Ubuntu-下安装-VMware-Tools"><a href="#Ubuntu-下安装-VMware-Tools" class="headerlink" title="Ubuntu 下安装 VMware Tools"></a>Ubuntu 下安装 VMware Tools</h1><p>由于 FFmpeg 迁移到 Android 需要用到 Linux 环境，所以只好在 Windows 系统里面装了一个 VMware 来解决了，VMware 和 Ubuntu 镜像的安装都很顺利，唯独在安装 VMware Tools 的时候卡了很久。于是有了本篇教程 —— 通过命令行安装 VMware Tools 。</p>
+    <content><![CDATA[<p>由于 FFmpeg 迁移到 Android 需要用到 Linux 环境，所以只好在 Windows 里面装了一个 VMware 虚拟机来解决了，VMware 软件和 Ubuntu 镜像的安装都很顺利，唯独在安装 VMware Tools 的时候卡了很久。于是有了本篇教程 —— 通过命令行安装 VMware Tools 。</p>
+<a id="more"></a>
+
 <p>首先，在桌面 <strong>Ctrl + Alt + T</strong> 打开 terminal 命令界面</p>
 <p>更新软件</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">sudo apt-get upgrade</span><br></pre></td></tr></table></figure>
