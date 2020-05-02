@@ -69,16 +69,16 @@
 <p>更新系统软件</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">sudo apt-get upgrade</span><br></pre></td></tr></table></figure>
 
-<p><img src="https://chevereto.damaskeen.space/images/2020/04/06/vmware_VH0P5OPZYH.png" alt="vmware_VH0P5OPZYH.png"></p>
+<p><a href="https://chevereto.damaskeen.space/image/FPl" target="_blank" rel="noopener external nofollow noreferrer"><img src="https://chevereto.damaskeen.space/images/2020/05/02/FPl.png" alt="FPl.png"></a></p>
 <p>安装 VMware Tools</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">sudo apt-get install open-vm-tools-desktop -y</span><br></pre></td></tr></table></figure>
 
-<p><img src="https://chevereto.damaskeen.space/images/2020/04/06/vmware_xtWYkavswP.png" alt="vmware_xtWYkavswP.png"></p>
+<p><a href="https://chevereto.damaskeen.space/image/OlW" target="_blank" rel="noopener external nofollow noreferrer"><img src="https://chevereto.damaskeen.space/images/2020/05/02/OlW.png" alt="OlW.png"></a></p>
 <p>重启系统</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">sudo reboot</span><br></pre></td></tr></table></figure>
 
 <p>重启虚拟机后，菜单栏 –&gt; 虚拟机 –&gt; 安装 VMware Tools –&gt; 已经变成“重新安装 VMware Tools ”，这表明 VMware Tools 已经安装成功。</p>
-<p><img src="https://chevereto.damaskeen.space/images/2020/04/06/H0mHxFZunV.png" alt="H0mHxFZunV.png"></p>
+<p><a href="https://chevereto.damaskeen.space/image/g6g" target="_blank" rel="noopener external nofollow noreferrer"><img src="https://chevereto.damaskeen.space/images/2020/05/02/g6g.png" alt="g6g.png"></a></p>
 ]]></content>
       <categories>
         <category>Linux</category>
