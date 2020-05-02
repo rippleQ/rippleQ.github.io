@@ -10,7 +10,7 @@
 <p>对于经常切换账户的用户，推荐选择第二种方式，比较稳定。</p>
 <p>切换 Apple Store 账号后，退出 App Store 并杀掉后台使其重新载入 。</p>
 <h4 id="充值-购买"><a href="#充值-购买" class="headerlink" title="充值/购买"></a>充值/购买</h4><p>国区苹果 ID 支持绑定支付宝、微信付款，此处不再赘述。美区 ID 可以绑定双币卡，若不方便办理双币卡的，可以选择购买礼品卡的方式进行充值。这里推荐一个购买礼品卡的平台：<a href="https://www.offgamers.com/" target="_blank" rel="noopener external nofollow noreferrer">OFFGAMERS</a> ，支持国区 Paypal 付款，绑定国内银联卡就可以。</p>
-<p><a href="https://chevereto.damaskeen.space/image/zXK" target="_blank" rel="noopener external nofollow noreferrer"><img src="https://chevereto.damaskeen.space/images/2020/05/02/zXK.png" alt="zXK.png"></a></p>
+<p><img src="https://chevereto.damaskeen.space/images/2020/05/02/zXK.png" alt="zXK.png"></p>
 <p>不推荐在淘宝平台购买礼品卡，有买到黑卡被封号的风险。另外，如果你有认识的在国外的朋友的话，可以在黑色星期五国外电商平台活动期间买到打折的礼品卡。</p>
 <h4 id="国区苹果-ID"><a href="#国区苹果-ID" class="headerlink" title="国区苹果 ID"></a>国区苹果 ID</h4><ol>
 <li>购买/下载/更新应用时，切记不要使用代理，可能会导致账户锁定</li>
@@ -26,6 +26,36 @@
       <tags>
         <tag>App Store</tag>
         <tag>Apple</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Ubuntu 下安装 VMware Tools</title>
+    <url>/archives/18d3f642.html</url>
+    <content><![CDATA[<p>由于 FFmpeg 迁移到 Android 需要用到 Linux 环境，所以只好在 Windows 里面装了一个 VMware 虚拟机来解决了，<a href="https://my.vmware.com/cn/web/vmware/info/slug/desktop_end_user_computing/vmware_workstation_pro/15_0" target="_blank" rel="noopener external nofollow noreferrer">VMware Workstation Pro</a> 软件和 <a href="https://ubuntu.com/" target="_blank" rel="noopener external nofollow noreferrer">Ubuntu</a> 镜像的安装都很顺利，唯独在安装 VMware Tools 的时候卡了很久。于是有了本篇教程 —— 通过命令行安装 VMware Tools 。</p>
+<a id="more"></a>
+
+<p>首先，在桌面 <strong>Ctrl + Alt + T</strong> 打开 terminal 命令界面</p>
+<p>更新系统软件</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">sudo apt-get upgrade</span><br></pre></td></tr></table></figure>
+
+<p><a href="https://chevereto.damaskeen.space/image/i0c" target="_blank" rel="noopener external nofollow noreferrer"><img src="https://chevereto.damaskeen.space/images/2020/05/02/i0c.png" alt="i0c.png"></a></p>
+<p>安装 VMware Tools</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">sudo apt-get install open-vm-tools-desktop -y</span><br></pre></td></tr></table></figure>
+
+<p><a href="https://chevereto.damaskeen.space/image/OlW" target="_blank" rel="noopener external nofollow noreferrer"><img src="https://chevereto.damaskeen.space/images/2020/05/02/OlW.png" alt="OlW.png"></a></p>
+<p>重启系统</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">sudo reboot</span><br></pre></td></tr></table></figure>
+
+<p>重启虚拟机后，菜单栏 –&gt; 虚拟机 –&gt; 安装 VMware Tools –&gt; 已经变成“重新安装 VMware Tools ”，这表明 VMware Tools 已经安装成功。</p>
+<p><a href="https://chevereto.damaskeen.space/image/g6g" target="_blank" rel="noopener external nofollow noreferrer"><img src="https://chevereto.damaskeen.space/images/2020/05/02/g6g.png" alt="g6g.png"></a></p>
+]]></content>
+      <categories>
+        <category>Linux</category>
+      </categories>
+      <tags>
+        <tag>Ubuntu</tag>
+        <tag>VMware</tag>
+        <tag>Tools</tag>
       </tags>
   </entry>
   <entry>
@@ -57,36 +87,6 @@
       </categories>
       <tags>
         <tag>Chevereto</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Ubuntu 下安装 VMware Tools</title>
-    <url>/archives/18d3f642.html</url>
-    <content><![CDATA[<p>由于 FFmpeg 迁移到 Android 需要用到 Linux 环境，所以只好在 Windows 里面装了一个 VMware 虚拟机来解决了，<a href="https://my.vmware.com/cn/web/vmware/info/slug/desktop_end_user_computing/vmware_workstation_pro/15_0" target="_blank" rel="noopener external nofollow noreferrer">VMware Workstation Pro</a> 软件和 <a href="https://ubuntu.com/" target="_blank" rel="noopener external nofollow noreferrer">Ubuntu</a> 镜像的安装都很顺利，唯独在安装 VMware Tools 的时候卡了很久。于是有了本篇教程 —— 通过命令行安装 VMware Tools 。</p>
-<a id="more"></a>
-
-<p>首先，在桌面 <strong>Ctrl + Alt + T</strong> 打开 terminal 命令界面</p>
-<p>更新系统软件</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">sudo apt-get upgrade</span><br></pre></td></tr></table></figure>
-
-<p><a href="https://chevereto.damaskeen.space/image/i0c" target="_blank" rel="noopener external nofollow noreferrer"><img src="https://chevereto.damaskeen.space/images/2020/05/02/i0c.png" alt="i0c.png"></a></p>
-<p>安装 VMware Tools</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">sudo apt-get install open-vm-tools-desktop -y</span><br></pre></td></tr></table></figure>
-
-<p><a href="https://chevereto.damaskeen.space/image/OlW" target="_blank" rel="noopener external nofollow noreferrer"><img src="https://chevereto.damaskeen.space/images/2020/05/02/OlW.png" alt="OlW.png"></a></p>
-<p>重启系统</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">sudo reboot</span><br></pre></td></tr></table></figure>
-
-<p>重启虚拟机后，菜单栏 –&gt; 虚拟机 –&gt; 安装 VMware Tools –&gt; 已经变成“重新安装 VMware Tools ”，这表明 VMware Tools 已经安装成功。</p>
-<p><a href="https://chevereto.damaskeen.space/image/g6g" target="_blank" rel="noopener external nofollow noreferrer"><img src="https://chevereto.damaskeen.space/images/2020/05/02/g6g.png" alt="g6g.png"></a></p>
-]]></content>
-      <categories>
-        <category>Linux</category>
-      </categories>
-      <tags>
-        <tag>Ubuntu</tag>
-        <tag>VMware</tag>
-        <tag>Tools</tag>
       </tags>
   </entry>
 </search>
