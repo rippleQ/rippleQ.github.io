@@ -10,7 +10,7 @@
 <p>对于经常切换账户的用户，推荐选择第二种方式，比较稳定。</p>
 <p>切换 Apple Store 账号后，退出 App Store 并杀掉后台使其重新载入 。</p>
 <h4 id="充值-购买"><a href="#充值-购买" class="headerlink" title="充值/购买"></a>充值/购买</h4><p>国区苹果 ID 支持绑定支付宝、微信付款，此处不再赘述。美区 ID 可以绑定双币卡，若不方便办理双币卡的，可以选择购买礼品卡的方式进行充值。这里推荐一个购买礼品卡的平台：<a href="https://www.offgamers.com/" target="_blank" rel="noopener external nofollow noreferrer">OFFGAMERS</a> ，支持国区 Paypal 付款，绑定国内银联卡就可以。</p>
-<p><a href="https://chevereto.damaskeen.space/image/MDYU" target="_blank" rel="noopener external nofollow noreferrer"><img src="https://chevereto.damaskeen.space/images/2020/03/10/firefox_xMeZN5nueL.png" alt="firefox_xMeZN5nueL.png"></a></p>
+<p><a href="https://chevereto.damaskeen.space/image/zXK" target="_blank" rel="noopener external nofollow noreferrer"><img src="https://chevereto.damaskeen.space/images/2020/05/02/zXK.png" alt="zXK.png"></a></p>
 <p>不推荐在淘宝平台购买礼品卡，有买到黑卡被封号的风险。另外，如果你有认识的在国外的朋友的话，可以在黑色星期五国外电商平台活动期间买到打折的礼品卡。</p>
 <h4 id="国区苹果-ID"><a href="#国区苹果-ID" class="headerlink" title="国区苹果 ID"></a>国区苹果 ID</h4><ol>
 <li>购买/下载/更新应用时，切记不要使用代理，可能会导致账户锁定</li>
@@ -42,9 +42,9 @@
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;div id&#x3D;&quot;home-cover-content&quot; class&#x3D;&quot;c20 fluid-column center-box padding-left-10 padding-right-10&quot;&gt;</span><br><span class="line">    &lt;?php CHV\Render\show_banner(&#39;home_before_title&#39;, (function_exists(&#39;get_list&#39;) ? get_list()-&gt;sfw : true)); ?&gt;</span><br><span class="line">    &lt;h1&gt;&lt;?php echo CHV\getSetting(&#39;homepage_title_html&#39;) ?: _s(&#39;Upload and share your images.&#39;); ?&gt;&lt;&#x2F;h1&gt;</span><br><span class="line">&lt;h3&gt;本站共托管 &lt;?php $stats &#x3D; CHV\Stat::getTotals();echo $stats[&#39;images&#39;] &gt; 999999 ? $stats[&#39;images&#39;] : number_format($stats[&#39;images&#39;]); ?&gt; 张图片&lt;&#x2F;h3&gt;</span><br></pre></td></tr></table></figure>
 
 <p>这里我是用宝塔面板内置的编辑器进行操作的：</p>
-<p><img src="https://chevereto.damaskeen.space/images/2020/03/12/firefox_ehDVtquSWb.png" alt=""></p>
+<p><a href="https://chevereto.damaskeen.space/image/7xv" target="_blank" rel="noopener external nofollow noreferrer"><img src="https://chevereto.damaskeen.space/images/2020/05/02/7xv.png" alt="7xv.png"></a></p>
 <p>更改完成后点击刷新使页面重新加载，最终效果如下图：</p>
-<p><img src="https://chevereto.damaskeen.space/images/2020/03/12/firefox_Px29QmaopN.png" alt=""></p>
+<p><a href="https://chevereto.damaskeen.space/image/PHG" target="_blank" rel="noopener external nofollow noreferrer"><img src="https://chevereto.damaskeen.space/images/2020/05/02/PHG.png" alt="PHG.png"></a></p>
 <h4 id="第二种方法"><a href="#第二种方法" class="headerlink" title="第二种方法"></a>第二种方法</h4><p>在 /app/themes/Peafowl/views/ 目录下，新建空白文件 - 复制粘贴以下代码 - 更改代码中的数据库用户名和密码 - 保存为 count.php 文件</p>
 <figure class="highlight php"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line">    error_reporting(<span class="number">0</span>);</span><br><span class="line">    $con = mysql_connect(<span class="string">"localhost"</span>, <span class="string">"数据库用户名"</span>, <span class="string">"数据库密码"</span>);</span><br><span class="line">    <span class="keyword">if</span> (!$con)&#123;</span><br><span class="line">        <span class="keyword">die</span>(<span class="string">'Could not connect: '</span> . mysql_error());</span><br><span class="line">    &#125;</span><br><span class="line">    $db_selected = mysql_select_db(<span class="string">"tu"</span>,$con);</span><br><span class="line">    $sql = <span class="string">"SELECT * FROM chv_images"</span>;</span><br><span class="line">    $result = mysql_query($sql,$con);</span><br><span class="line">    <span class="keyword">echo</span> mysql_num_rows($result);</span><br><span class="line">    mysql_close($con);</span><br><span class="line"><span class="meta">?&gt;</span></span><br></pre></td></tr></table></figure>
 
