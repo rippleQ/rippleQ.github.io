@@ -1,6 +1,67 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Chevereto 首页加入上传图片总数量统计</title>
+    <url>/archives/5e89d88e.html</url>
+    <content><![CDATA[<p>前些天在 Telegram 上的 <a href="https://t.me/agintme" target="_blank" rel="noopener external nofollow noreferrer">杂货屋</a> 频道看到一篇<a href="https://www.yunloc.com/984.html" target="_blank" rel="noopener external nofollow noreferrer">《Chevereto - 首页加入上传图片总数量统计》</a>的教程，于是决定自己动手试一试，经过了一番踩坑，终于大功告成。本着没写下来就是没做过的原则，记录一下具体操作流程。</p>
+<a id="more"></a>
+
+<p>教程中一共介绍了两种方法，<del>因为懒</del> 第一种方法成功之后就没研究第二种，本文将详细介绍第一种方法，简略介绍第二种方法。</p>
+<h4 id="第一种方法"><a href="#第一种方法" class="headerlink" title="第一种方法"></a>第一种方法</h4><p>在网站文件 /app/themes/Peafowl/views/index.php 中的相应位置加入以下代码：</p>
+<p>注意：第一行的<code>div标签</code>是为了确定粘贴位置用的，不要一起粘贴过去。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;div id&#x3D;&quot;home-cover&quot; data-content&#x3D;&quot;follow-scroll-opacity&quot;&gt;</span><br><span class="line">    &lt;?php G\Render\include_theme_file(&#39;snippets&#x2F;homepage_cover_slideshow&#39;); ?&gt;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;div id&#x3D;&quot;home-cover-content&quot; class&#x3D;&quot;c20 fluid-column center-box padding-left-10 padding-right-10&quot;&gt;</span><br><span class="line">    &lt;?php CHV\Render\show_banner(&#39;home_before_title&#39;, (function_exists(&#39;get_list&#39;) ? get_list()-&gt;sfw : true)); ?&gt;</span><br><span class="line">    &lt;h1&gt;&lt;?php echo CHV\getSetting(&#39;homepage_title_html&#39;) ?: _s(&#39;Upload and share your images.&#39;); ?&gt;&lt;&#x2F;h1&gt;</span><br><span class="line">&lt;h3&gt;本站共托管 &lt;?php $stats &#x3D; CHV\Stat::getTotals();echo $stats[&#39;images&#39;] &gt; 999999 ? $stats[&#39;images&#39;] : number_format($stats[&#39;images&#39;]); ?&gt; 张图片&lt;&#x2F;h3&gt;</span><br></pre></td></tr></table></figure>
+
+<p>这里我是用宝塔面板内置的编辑器进行操作的：</p>
+<p><img src="https://chevereto.damaskeen.space/images/2020/05/02/7xv.png" alt="7xv.png"></p>
+<p>更改完成后点击刷新使页面重新加载，最终效果如下图：</p>
+<p><img src="https://chevereto.damaskeen.space/images/2020/05/02/PHG.png" alt="PHG.png"></p>
+<h4 id="第二种方法"><a href="#第二种方法" class="headerlink" title="第二种方法"></a>第二种方法</h4><p>在 /app/themes/Peafowl/views/ 目录下，新建空白文件 - 复制粘贴以下代码 - 更改代码中的数据库用户名和密码 - 保存为 count.php 文件</p>
+<figure class="highlight php"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line">    error_reporting(<span class="number">0</span>);</span><br><span class="line">    $con = mysql_connect(<span class="string">"localhost"</span>, <span class="string">"数据库用户名"</span>, <span class="string">"数据库密码"</span>);</span><br><span class="line">    <span class="keyword">if</span> (!$con)&#123;</span><br><span class="line">        <span class="keyword">die</span>(<span class="string">'Could not connect: '</span> . mysql_error());</span><br><span class="line">    &#125;</span><br><span class="line">    $db_selected = mysql_select_db(<span class="string">"tu"</span>,$con);</span><br><span class="line">    $sql = <span class="string">"SELECT * FROM chv_images"</span>;</span><br><span class="line">    $result = mysql_query($sql,$con);</span><br><span class="line">    <span class="keyword">echo</span> mysql_num_rows($result);</span><br><span class="line">    mysql_close($con);</span><br><span class="line"><span class="meta">?&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>将以下代码放在 app/themes/Peafowl/views/index.php 文件中的合适位置，注意更改代码中的域名</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">    $data &#x3D; file_get_contents(&#39;https:&#x2F;&#x2F;网站域名&#x2F;count.php&#39;);</span><br><span class="line">?&gt;</span><br><span class="line">&lt;p&gt;本站已托管 &lt;?php echo $data ?&gt; 张图片&lt;&#x2F;p&gt;</span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>工具</category>
+      </categories>
+      <tags>
+        <tag>Chevereto</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Ubuntu 下安装 VMware Tools</title>
+    <url>/archives/18d3f642.html</url>
+    <content><![CDATA[<p>由于 FFmpeg 迁移到 Android 需要用到 Linux 环境，所以只好在 Windows 里面装了一个 VMware 虚拟机来解决了，<a href="https://my.vmware.com/cn/web/vmware/info/slug/desktop_end_user_computing/vmware_workstation_pro/15_0" target="_blank" rel="noopener external nofollow noreferrer">VMware Workstation Pro</a> 软件和 <a href="https://ubuntu.com/" target="_blank" rel="noopener external nofollow noreferrer">Ubuntu</a> 镜像的安装都很顺利，唯独在安装 VMware Tools 的时候卡了很久。于是有了本篇教程 —— 通过命令行安装 VMware Tools 。</p>
+<a id="more"></a>
+
+<p>首先，在桌面 <strong>Ctrl + Alt + T</strong> 打开 terminal 命令界面</p>
+<p>更新系统软件</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">sudo apt-get upgrade</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://chevereto.damaskeen.space/images/2020/05/02/i0c.png" alt="i0c.png"></p>
+<p>安装 VMware Tools</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">sudo apt-get install open-vm-tools-desktop -y</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://chevereto.damaskeen.space/images/2020/05/02/OlW.png" alt="OlW.png"></p>
+<p>重启系统</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">sudo reboot</span><br></pre></td></tr></table></figure>
+
+<p>重启虚拟机后，菜单栏 –&gt; 虚拟机 –&gt; 安装 VMware Tools –&gt; 已经变成“重新安装 VMware Tools ”，这表明 VMware Tools 已经安装成功。</p>
+<p><img src="https://chevereto.damaskeen.space/images/2020/05/02/g6g.png" alt="g6g.png"></p>
+]]></content>
+      <categories>
+        <category>Linux</category>
+      </categories>
+      <tags>
+        <tag>Ubuntu</tag>
+        <tag>VMware</tag>
+        <tag>Tools</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>App Store 使用手册</title>
     <url>/archives/a849ad8.html</url>
     <content><![CDATA[<p>App Store 的个人使用手册，收集了关于 App Store 日常使用的一些问题。</p>
@@ -26,67 +87,6 @@
       <tags>
         <tag>App Store</tag>
         <tag>Apple</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Ubuntu 下安装 VMware Tools</title>
-    <url>/archives/18d3f642.html</url>
-    <content><![CDATA[<p>由于 FFmpeg 迁移到 Android 需要用到 Linux 环境，所以只好在 Windows 里面装了一个 VMware 虚拟机来解决了，<a href="https://my.vmware.com/cn/web/vmware/info/slug/desktop_end_user_computing/vmware_workstation_pro/15_0" target="_blank" rel="noopener external nofollow noreferrer">VMware Workstation Pro</a> 软件和 <a href="https://ubuntu.com/" target="_blank" rel="noopener external nofollow noreferrer">Ubuntu</a> 镜像的安装都很顺利，唯独在安装 VMware Tools 的时候卡了很久。于是有了本篇教程 —— 通过命令行安装 VMware Tools 。</p>
-<a id="more"></a>
-
-<p>首先，在桌面 <strong>Ctrl + Alt + T</strong> 打开 terminal 命令界面</p>
-<p>更新系统软件</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">sudo apt-get upgrade</span><br></pre></td></tr></table></figure>
-
-<p><a href="https://chevereto.damaskeen.space/image/i0c" target="_blank" rel="noopener external nofollow noreferrer"><img src="https://chevereto.damaskeen.space/images/2020/05/02/i0c.png" alt="i0c.png"></a></p>
-<p>安装 VMware Tools</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">sudo apt-get install open-vm-tools-desktop -y</span><br></pre></td></tr></table></figure>
-
-<p><a href="https://chevereto.damaskeen.space/image/OlW" target="_blank" rel="noopener external nofollow noreferrer"><img src="https://chevereto.damaskeen.space/images/2020/05/02/OlW.png" alt="OlW.png"></a></p>
-<p>重启系统</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">sudo reboot</span><br></pre></td></tr></table></figure>
-
-<p>重启虚拟机后，菜单栏 –&gt; 虚拟机 –&gt; 安装 VMware Tools –&gt; 已经变成“重新安装 VMware Tools ”，这表明 VMware Tools 已经安装成功。</p>
-<p><a href="https://chevereto.damaskeen.space/image/g6g" target="_blank" rel="noopener external nofollow noreferrer"><img src="https://chevereto.damaskeen.space/images/2020/05/02/g6g.png" alt="g6g.png"></a></p>
-]]></content>
-      <categories>
-        <category>Linux</category>
-      </categories>
-      <tags>
-        <tag>Ubuntu</tag>
-        <tag>VMware</tag>
-        <tag>Tools</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Chevereto 首页加入上传图片总数量统计</title>
-    <url>/archives/5e89d88e.html</url>
-    <content><![CDATA[<p>前些天在 Telegram 上的 <a href="https://t.me/agintme" target="_blank" rel="noopener external nofollow noreferrer">杂货屋</a> 频道看到一篇<a href="https://www.yunloc.com/984.html" target="_blank" rel="noopener external nofollow noreferrer">《Chevereto - 首页加入上传图片总数量统计》</a>的教程，于是决定自己动手试一试，经过了一番踩坑，终于大功告成。本着没写下来就是没做过的原则，记录一下具体操作流程。</p>
-<a id="more"></a>
-
-<p>教程中一共介绍了两种方法，<del>因为懒</del> 第一种方法成功之后就没研究第二种，本文将详细介绍第一种方法，简略介绍第二种方法。</p>
-<h4 id="第一种方法"><a href="#第一种方法" class="headerlink" title="第一种方法"></a>第一种方法</h4><p>在网站文件 /app/themes/Peafowl/views/index.php 中的相应位置加入以下代码：</p>
-<p>注意：第一行的<code>div标签</code>是为了确定粘贴位置用的，不要一起粘贴过去。</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;div id&#x3D;&quot;home-cover&quot; data-content&#x3D;&quot;follow-scroll-opacity&quot;&gt;</span><br><span class="line">    &lt;?php G\Render\include_theme_file(&#39;snippets&#x2F;homepage_cover_slideshow&#39;); ?&gt;</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;div id&#x3D;&quot;home-cover-content&quot; class&#x3D;&quot;c20 fluid-column center-box padding-left-10 padding-right-10&quot;&gt;</span><br><span class="line">    &lt;?php CHV\Render\show_banner(&#39;home_before_title&#39;, (function_exists(&#39;get_list&#39;) ? get_list()-&gt;sfw : true)); ?&gt;</span><br><span class="line">    &lt;h1&gt;&lt;?php echo CHV\getSetting(&#39;homepage_title_html&#39;) ?: _s(&#39;Upload and share your images.&#39;); ?&gt;&lt;&#x2F;h1&gt;</span><br><span class="line">&lt;h3&gt;本站共托管 &lt;?php $stats &#x3D; CHV\Stat::getTotals();echo $stats[&#39;images&#39;] &gt; 999999 ? $stats[&#39;images&#39;] : number_format($stats[&#39;images&#39;]); ?&gt; 张图片&lt;&#x2F;h3&gt;</span><br></pre></td></tr></table></figure>
-
-<p>这里我是用宝塔面板内置的编辑器进行操作的：</p>
-<p><a href="https://chevereto.damaskeen.space/image/7xv" target="_blank" rel="noopener external nofollow noreferrer"><img src="https://chevereto.damaskeen.space/images/2020/05/02/7xv.png" alt="7xv.png"></a></p>
-<p>更改完成后点击刷新使页面重新加载，最终效果如下图：</p>
-<p><a href="https://chevereto.damaskeen.space/image/PHG" target="_blank" rel="noopener external nofollow noreferrer"><img src="https://chevereto.damaskeen.space/images/2020/05/02/PHG.png" alt="PHG.png"></a></p>
-<h4 id="第二种方法"><a href="#第二种方法" class="headerlink" title="第二种方法"></a>第二种方法</h4><p>在 /app/themes/Peafowl/views/ 目录下，新建空白文件 - 复制粘贴以下代码 - 更改代码中的数据库用户名和密码 - 保存为 count.php 文件</p>
-<figure class="highlight php"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line">    error_reporting(<span class="number">0</span>);</span><br><span class="line">    $con = mysql_connect(<span class="string">"localhost"</span>, <span class="string">"数据库用户名"</span>, <span class="string">"数据库密码"</span>);</span><br><span class="line">    <span class="keyword">if</span> (!$con)&#123;</span><br><span class="line">        <span class="keyword">die</span>(<span class="string">'Could not connect: '</span> . mysql_error());</span><br><span class="line">    &#125;</span><br><span class="line">    $db_selected = mysql_select_db(<span class="string">"tu"</span>,$con);</span><br><span class="line">    $sql = <span class="string">"SELECT * FROM chv_images"</span>;</span><br><span class="line">    $result = mysql_query($sql,$con);</span><br><span class="line">    <span class="keyword">echo</span> mysql_num_rows($result);</span><br><span class="line">    mysql_close($con);</span><br><span class="line"><span class="meta">?&gt;</span></span><br></pre></td></tr></table></figure>
-
-<p>将以下代码放在 app/themes/Peafowl/views/index.php 文件中的合适位置，注意更改代码中的域名</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">    $data &#x3D; file_get_contents(&#39;https:&#x2F;&#x2F;网站域名&#x2F;count.php&#39;);</span><br><span class="line">?&gt;</span><br><span class="line">&lt;p&gt;本站已托管 &lt;?php echo $data ?&gt; 张图片&lt;&#x2F;p&gt;</span><br></pre></td></tr></table></figure>
-
-]]></content>
-      <categories>
-        <category>工具</category>
-      </categories>
-      <tags>
-        <tag>Chevereto</tag>
       </tags>
   </entry>
 </search>
