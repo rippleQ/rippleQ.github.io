@@ -1,6 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Ubuntu 下安装 VMware Tools</title>
+    <url>/archives/18d3f642.html</url>
+    <content><![CDATA[<p>由于 FFmpeg 迁移到 Android 需要用到 Linux 环境，所以只好在 Windows 里面装了一个 VMware 虚拟机来解决了，<a href="https://my.vmware.com/cn/web/vmware/info/slug/desktop_end_user_computing/vmware_workstation_pro/15_0" target="_blank" rel="noopener external nofollow noreferrer">VMware Workstation Pro</a> 软件和 <a href="https://ubuntu.com/" target="_blank" rel="noopener external nofollow noreferrer">Ubuntu</a> 镜像的安装都很顺利，唯独在安装 VMware Tools 的时候卡了很久。于是有了本篇教程 —— 通过命令行安装 VMware Tools 。</p>
+<a id="more"></a>
+
+<p>首先，在桌面 <strong>Ctrl + Alt + T</strong> 打开 terminal 命令界面</p>
+<p>更新系统软件</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">sudo apt-get upgrade</span><br></pre></td></tr></table></figure>
+
+<p><a href="https://chevereto.damaskeen.space/image/FPl" target="_blank" rel="noopener external nofollow noreferrer"><img src="https://chevereto.damaskeen.space/images/2020/05/02/FPl.png" alt="FPl.png"></a></p>
+<p>安装 VMware Tools</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">sudo apt-get install open-vm-tools-desktop -y</span><br></pre></td></tr></table></figure>
+
+<p><a href="https://chevereto.damaskeen.space/image/OlW" target="_blank" rel="noopener external nofollow noreferrer"><img src="https://chevereto.damaskeen.space/images/2020/05/02/OlW.png" alt="OlW.png"></a></p>
+<p>重启系统</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">sudo reboot</span><br></pre></td></tr></table></figure>
+
+<p>重启虚拟机后，菜单栏 –&gt; 虚拟机 –&gt; 安装 VMware Tools –&gt; 已经变成“重新安装 VMware Tools ”，这表明 VMware Tools 已经安装成功。</p>
+<p><a href="https://chevereto.damaskeen.space/image/g6g" target="_blank" rel="noopener external nofollow noreferrer"><img src="https://chevereto.damaskeen.space/images/2020/05/02/g6g.png" alt="g6g.png"></a></p>
+]]></content>
+      <categories>
+        <category>Linux</category>
+      </categories>
+      <tags>
+        <tag>Ubuntu</tag>
+        <tag>VMware</tag>
+        <tag>Tools</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>App Store 使用手册</title>
     <url>/archives/a849ad8.html</url>
     <content><![CDATA[<p>App Store 的个人使用手册，收集了关于 App Store 日常使用的一些问题。</p>
@@ -57,36 +87,6 @@
       </categories>
       <tags>
         <tag>Chevereto</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Ubuntu 下安装 VMware Tools</title>
-    <url>/archives/18d3f642.html</url>
-    <content><![CDATA[<p>由于 FFmpeg 迁移到 Android 需要用到 Linux 环境，所以只好在 Windows 里面装了一个 VMware 虚拟机来解决了，<a href="https://my.vmware.com/cn/web/vmware/info/slug/desktop_end_user_computing/vmware_workstation_pro/15_0" target="_blank" rel="noopener external nofollow noreferrer">VMware Workstation Pro</a> 软件和 <a href="https://ubuntu.com/" target="_blank" rel="noopener external nofollow noreferrer">Ubuntu</a> 镜像的安装都很顺利，唯独在安装 VMware Tools 的时候卡了很久。于是有了本篇教程 —— 通过命令行安装 VMware Tools 。</p>
-<a id="more"></a>
-
-<p>首先，在桌面 <strong>Ctrl + Alt + T</strong> 打开 terminal 命令界面</p>
-<p>更新系统软件</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">sudo apt-get upgrade</span><br></pre></td></tr></table></figure>
-
-<p><a href="https://chevereto.damaskeen.space/image/FPl" target="_blank" rel="noopener external nofollow noreferrer"><img src="https://chevereto.damaskeen.space/images/2020/05/02/FPl.png" alt="FPl.png"></a></p>
-<p>安装 VMware Tools</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">sudo apt-get install open-vm-tools-desktop -y</span><br></pre></td></tr></table></figure>
-
-<p><a href="https://chevereto.damaskeen.space/image/OlW" target="_blank" rel="noopener external nofollow noreferrer"><img src="https://chevereto.damaskeen.space/images/2020/05/02/OlW.png" alt="OlW.png"></a></p>
-<p>重启系统</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">sudo reboot</span><br></pre></td></tr></table></figure>
-
-<p>重启虚拟机后，菜单栏 –&gt; 虚拟机 –&gt; 安装 VMware Tools –&gt; 已经变成“重新安装 VMware Tools ”，这表明 VMware Tools 已经安装成功。</p>
-<p><a href="https://chevereto.damaskeen.space/image/g6g" target="_blank" rel="noopener external nofollow noreferrer"><img src="https://chevereto.damaskeen.space/images/2020/05/02/g6g.png" alt="g6g.png"></a></p>
-]]></content>
-      <categories>
-        <category>Linux</category>
-      </categories>
-      <tags>
-        <tag>Ubuntu</tag>
-        <tag>VMware</tag>
-        <tag>Tools</tag>
       </tags>
   </entry>
 </search>
